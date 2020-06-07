@@ -15,11 +15,33 @@ def last_digit_of_the_sum_of_fibonacci_numbers_naive(n):
 
     return sum(fibonacci_numbers) % 10
 
+def pisano_period_sum():
+    m = 10;
+    current, next = 0, 1
+    sum = 0
+    period = 0
+    while True:
+        current, next = next, (current+next) % m
+        sum += current
+        period += 1
+        if current == 1 and next == 0 :
+            return sum, period
+
+def sumof(m):
+    current, next = 0, 1
+    sum = 0
+    for _ in range(m):
+        current, next = next, (current+next) % 10
+        sum += current
+    return sum
 
 def last_digit_of_the_sum_of_fibonacci_numbers(n):
     assert 0 <= n <= 10 ** 18
 
-    type here
+    sum, period = pisano_period_sum()
+    mul = (int)(n/period)
+    digit = ((mul * sum) + sumof(( n % period )))%10
+    return digit
 
 
 if __name__ == '__main__':
