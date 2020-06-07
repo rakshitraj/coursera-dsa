@@ -12,8 +12,11 @@ def last_digit_of_fibonacci_number_naive(n):
 
 def last_digit_of_fibonacci_number(n):
     assert 0 <= n <= 10 ** 7
-
-    type here
+    # Implementing property of Pisano Period
+    current, next = 0,1
+    for _ in range(n+1):
+        current, next = next, (current+next)%10
+    return current
 
 
 if __name__ == '__main__':
