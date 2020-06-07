@@ -1,6 +1,4 @@
 # python3
-
-
 def fibonacci_number_naive(n):
     assert 0 <= n <= 45
 
