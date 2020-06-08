@@ -11,7 +11,14 @@ def fibonacci_sum_last_digit(n):
 
     return (prev + 9) % 10
 
-def reference(from_index, to_index):
+def reference(frShow grader output
+2-4: Least Common Multiple
+Filename: 2-4: Least Common Multiple
+0/1Score: 0 of 1
+2-5: Fibonacci Number Again
+Filename: 2-5: Fibonacci Number Again
+1/1Score: 1 of 1
+om_index, to_index):
     return (20 + fibonacci_sum_last_digit(to_index + 2) - fibonacci_sum_last_digit(from_index + 1)) % 10
 
 

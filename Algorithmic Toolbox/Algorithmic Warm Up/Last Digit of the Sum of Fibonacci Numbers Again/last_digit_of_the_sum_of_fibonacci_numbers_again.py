@@ -16,10 +16,17 @@ def last_digit_of_the_sum_of_fibonacci_numbers_again_naive(from_index, to_index)
     return sum(fibonacci_numbers[from_index:to_index + 1]) % 10
 
 
-def last_digit_of_the_sum_of_fibonacci_numbers_again(from_index, to_index):
+def last_digit_of_the_sum_of_fibonacci_numbers_again(from_index, to_index, ):
     assert 0 <= from_index <= to_index <= 10 ** 18
 
-    type here
+    m, n = from_index, to_index
+    F = [0, 1]
+    sum = 0
+    for i in range(2, n + 1):
+        F.append((F[i - 1] + F[i - 2]) % 10)
+    for i in range(m, n + 1):
+        sum += F[i]
+    return sum % 10
 
 
 if __name__ == '__main__':
