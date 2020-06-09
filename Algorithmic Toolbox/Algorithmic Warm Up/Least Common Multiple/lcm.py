@@ -10,11 +10,17 @@ def lcm_naive(a, b):
 
     return multiple
 
+def gcd( a, b):
+    
+    if b == 0 :
+        return a
+    a_ = a%b
+    return gcd(b, a_)
 
 def lcm(a, b):
     assert 1 <= a <= 2 * 10 ** 9 and 1 <= b <= 2 * 10 ** 9
 
-    type here
+    return (a*b) / gcd(a,b)
 
 
 if __name__ == '__main__':
