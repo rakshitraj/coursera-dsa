@@ -69,7 +69,7 @@ files:
 - name: fibonacci_number.py
   visible: true
   placeholders:
-  - offset: 230
+  - offset: 228
     length: 160
     placeholder_text: type here
     initial_state:
