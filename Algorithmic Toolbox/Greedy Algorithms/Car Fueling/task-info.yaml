@@ -4,7 +4,7 @@ files:
   visible: true
   placeholders:
   - offset: 255
-    length: 487
+    length: 414
     placeholder_text: type here
     initial_state:
       length: 9
@@ -38,7 +38,7 @@ files:
   visible: true
   placeholders:
   - offset: 295
-    length: 0
+    length: 47
     placeholder_text: type here
     initial_state:
       length: 9
@@ -109,5 +109,5 @@ status: Failed
 feedback:
   message: Some unit tests failed. Please fix your code, ensure that all unit tests
     pass, and try again.
-  time: Wed, 01 Jul 2020 17:48:42 UTC
+  time: Wed, 01 Jul 2020 18:09:59 UTC
 record: -1
