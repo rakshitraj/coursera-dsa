@@ -4,14 +4,14 @@ files:
   visible: true
   placeholders:
   - offset: 255
-    length: 454
+    length: 487
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 259
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Failed
   text: |
     # python3
 
@@ -37,15 +37,15 @@ files:
 - name: car_fueling_unit_tests.py
   visible: true
   placeholders:
-  - offset: 307
-    length: 9
+  - offset: 295
+    length: 0
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 307
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
   text: |
     import unittest
     from car_fueling import compute_min_number_of_refills
@@ -105,9 +105,9 @@ files:
             passed()
   learner_created: false
 feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/kAiGl/programming-assignment-2-greedy-algorithms/discussions
-status: Unchecked
+status: Failed
 feedback:
-  message: <html>Local tests passed, please <a href="https://www.coursera.org/learn/algorithmic-toolbox/programming/kAiGl/programming-assignment-2-greedy-algorithms/submission">submit
-    to Coursera</a></html>
-  time: Wed, 01 Jul 2020 12:01:29 UTC
+  message: Some unit tests failed. Please fix your code, ensure that all unit tests
+    pass, and try again.
+  time: Wed, 01 Jul 2020 17:48:42 UTC
 record: -1
