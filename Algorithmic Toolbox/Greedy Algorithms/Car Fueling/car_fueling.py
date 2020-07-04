@@ -20,16 +20,18 @@ def compute_min_number_of_refills(d, m, stops):
     assert 1 <= len(stops) <= 300
     assert 0 < stops[0] and all(stops[i] < stops[i + 1] for i in range(len(stops) - 1)) and stops[-1] < d
 
-    #return car_fueling(d, m, len(stops), stops)
-    numRefill, currentRefill = 0,0
-    while currentRefill < len(stops) -1 :
-        if stops[currentRefill] > m:
-            return -1
-        lastRefill = currentRefill
-        while (currentRefill < len(stops) -1 and
-               stops[currentRefill + 1] - stops[lastRefill] <= m ) :
-            currentRefill += 1
-        numRefill += 1
+    return car_fueling(d, m, len(stops), stops)
+    # stops.insert(len(stops), d)
+    # numRefill, currentRefill, pos = 0,0,0
+    # while currentRefill < len(stops) -1 :
+    #     if stops[currentRefill] - pos > m:
+    #         return -1
+    #     lastRefill = currentRefill
+    #     while (currentRefill < len(stops) -1 and
+    #            stops[currentRefill + 1] - stops[lastRefill] <= m ) :
+    #         currentRefill += 1
+    #     numRefill += 1
+    #     pos = stops[currentRefill]
 
     return numRefill
 
