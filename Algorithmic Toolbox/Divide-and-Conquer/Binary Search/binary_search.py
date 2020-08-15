@@ -13,7 +13,17 @@ def binary_search(keys, query):
     assert all(keys[i] < keys[i + 1] for i in range(len(keys) - 1))
     assert 1 <= len(keys) <= 3 * 10 ** 4
 
-    type here
+    low, high = 0, len(keys)-1
+
+    while low <= high:
+        mid = int((high-low)/2)
+        if keys[mid] == query :
+            return mid
+        elif keys[mid] > query :
+            high = mid-1
+        else :
+            low = mid+1
+    return -1
 
 
 if __name__ == '__main__':

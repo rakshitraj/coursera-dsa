@@ -3,23 +3,23 @@ files:
 - name: binary_search_unit_tests.py
   visible: true
   placeholders:
-  - offset: 241
-    length: 9
+  - offset: 229
+    length: 59
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 241
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Failed
-  - offset: 520
-    length: 9
+  - offset: 546
+    length: 44
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 520
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Failed
   text: |
     import unittest
@@ -106,7 +106,7 @@ files:
   visible: true
   placeholders:
   - offset: 284
-    length: 13
+    length: 252
     placeholder_text: type here
     initial_state:
       length: 9
@@ -143,6 +143,7 @@ files:
 feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/w9YDz/programming-assignment-3-divide-and-conquer/discussions
 status: Failed
 feedback:
-  message: Syntax Error
-  time: Sat, 15 Aug 2020 12:13:43 UTC
+  message: Some unit tests failed. Please fix your code, ensure that all unit tests
+    pass, and try again.
+  time: Sat, 15 Aug 2020 12:53:05 UTC
 record: -1
