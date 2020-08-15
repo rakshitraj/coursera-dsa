@@ -12,7 +12,7 @@ def compute_optimal_summands(n):
         if n>k :
             summands.append(k)
         else :
-            summands.append(n)
+            summands.append(n+k)
 
     return summands
 
