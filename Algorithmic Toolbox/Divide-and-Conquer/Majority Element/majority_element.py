@@ -12,7 +12,14 @@ def majority_element_naive(elements):
 
 def majority_element(elements):
     assert len(elements) <= 10 ** 5
-    type here
+    T = [0] * (10 ** 5)
+
+    for i in elements:
+        T[i] = T[i] + 1
+    for count in T:
+        if count == len(elements)/2 :
+            return 1
+    return 0
 
 
 if __name__ == '__main__':

@@ -11,7 +11,7 @@ files:
       offset: 241
     initialized_from_dependency: false
     selected: true
-    status: Failed
+    status: Unchecked
   - offset: 546
     length: 44
     placeholder_text: type here
@@ -20,7 +20,7 @@ files:
       offset: 520
     initialized_from_dependency: false
     selected: true
-    status: Failed
+    status: Unchecked
   text: |
     import unittest
     from binary_search import binary_search, linear_search
@@ -113,7 +113,7 @@ files:
       offset: 288
     initialized_from_dependency: false
     selected: true
-    status: Failed
+    status: Unchecked
   text: |
     # python3
 
@@ -141,9 +141,9 @@ files:
             print(binary_search(input_keys, q), end=' ')
   learner_created: false
 feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/w9YDz/programming-assignment-3-divide-and-conquer/discussions
-status: Failed
+status: Unchecked
 feedback:
-  message: Some unit tests failed. Please fix your code, ensure that all unit tests
-    pass, and try again.
-  time: Sat, 15 Aug 2020 12:53:05 UTC
+  message: <html>Local tests passed, please <a href="https://www.coursera.org/learn/algorithmic-toolbox/programming/w9YDz/programming-assignment-3-divide-and-conquer/submission">submit
+    to Coursera</a></html>
+  time: Sat, 15 Aug 2020 12:57:08 UTC
 record: -1
