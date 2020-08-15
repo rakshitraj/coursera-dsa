@@ -106,7 +106,7 @@ files:
   visible: true
   placeholders:
   - offset: 284
-    length: 0
+    length: 13
     placeholder_text: type here
     initial_state:
       length: 9
@@ -144,5 +144,5 @@ feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/w9
 status: Failed
 feedback:
   message: Syntax Error
-  time: Sat, 15 Aug 2020 11:46:23 UTC
+  time: Sat, 15 Aug 2020 12:13:43 UTC
 record: -1
